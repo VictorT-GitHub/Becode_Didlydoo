@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: default;
+
+  outline: none;
+  border: none;
+
+  font-family: serif;
+}
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
+}
+
+input,
+h1,
+h5,
+.av,
+.avBtn {
+  text-align: center;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+
+  overflow-x: hidden;
+}
+
+/* ------------------------ HEADER ------------------------ */
+h1 {
+  font-size: 75px;
+  font-weight: 100;
+  color: #1864ab;
+  padding: 40px;
+}
+
+/* --------------------------- MAIN --------------------------- */
+input {
+  background: url("../../images/Screenshot\ from\ 2021-11-18\ 15-43-17.png")
+    center;
+
+  height: 40px;
+  width: 180px;
+
+  margin-right: 12px;
+
+  cursor: pointer;
+}
+
+button {
+  margin-right: 8px;
+  padding: 2px 6px;
+
+  cursor: pointer;
+}
+
+/* ------------ FORMULAIRE HTML : POST EVENT ------------ */
+#dateInputsContainer {
+  max-height: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#inputDateOriginel {
+  margin-top: 0;
+}
+.newEventDates {
+  margin-right: 0;
+  margin-top: 3px;
+
+  color: #5a5a5a;
+}
+#addDatesBtn {
+  background: url("../../images/Screenshot\ from\ 2021-11-18\ 17-37-11.png")
+    center;
+
+  margin-top: 6px;
+
+  height: 28px;
+  width: 28px;
+}
+.deleteDateBtn {
+  background: url("../../images/Screenshot\ from\ 2021-11-18\ 17-36-44.png")
+    center;
+
+  height: 28px;
+  width: 30px;
+
+  margin-left: 4px;
+}
+#newEventSubmit {
+  background: url("../../images/Screenshot\ from\ 2021-11-18\ 17-37-42.png")
+    center;
+
+  height: 55px;
+  width: 200px;
+
+  transform: translateY(-9px);
+}
+
+input,
+#addDatesBtn,
+.deleteDateBtn,
+#newEventSubmit {
+  background-size: cover;
+}
+
+/* ------------ EVENTS SECTIONS (.eventContainer) ------------ */
+.eventContainer {
+  padding-top: 30px;
+  padding-bottom: 45px;
+  margin: auto;
+  width: 85%;
+}
+.btnsNameAuthorContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* INFOS */
+h3 {
+  font-weight: normal;
+  font-size: 25px;
+}
+p {
+  margin-bottom: 16px;
+
+  font-size: 16px;
+  padding: 16px;
+}
+
+/* BTNS modify add_dates delete */
+.modifyEventBtn {
+  background: url("../../images/Screenshot\ from\ 2021-11-18\ 18-27-05.png")
+    center;
+  width: 72px;
+}
+.addDatesBtn {
+  background: url("../../images/Screenshot\ from\ 2021-11-18\ 18-26-50.png")
+    center;
+  width: 90px;
+}
+.deleteEventBtn {
+  background: url("../../images/Screenshot\ from\ 2021-11-18\ 18-28-16.png")
+    center;
+}
+.modifyEventBtn,
+.addDatesBtn,
+.deleteEventBtn {
+  background-size: cover;
+  height: 32px;
+
+  transform: translateY(8px);
+}
+
+/* GRID */
+.bigGrid {
+  display: grid;
+  gap: 1px;
+}
+h5 {
+  font-weight: normal;
+  font-size: 18px;
+
+  grid-row: 1;
+
+  padding: 4px;
+}
+h6 {
+  font-weight: normal;
+  font-size: 18px;
+
+  grid-column: 1;
+
+  padding: 4px 12px;
+  border: 1px solid black;
+}
+.av {
+  padding: 4px;
+  border: 1px solid black;
+}
+.greenAv {
+  color: #599208;
+}
+.redAv {
+  color: #c72121;
+}
+
+/* USERS AVAILABILITY INPUTS */
+.sendBtnAndInputNameDiv,
+.inputsBtns {
+  padding-top: 12px;
+}
+.sendBtn {
+  height: 32px;
+  width: 52px;
+  background: url("../../images/Screenshot\ from\ 2021-11-18\ 17-35-33.png")
+    center;
+  background-size: cover;
+
+  transform: translateY(4px);
+}
+.inputsBtns {
+  background: url("../../images/Screenshot\ from\ 2021-11-18\ 18-55-19.png")
+    center no-repeat;
+  background-size: contain;
+}
+.avBtn {
+  background: transparent;
+  height: 21px;
+  width: 34px;
+
+  margin-left: 6px;
+  margin-right: 6px;
+
+  transform: translateY(8px);
+}
