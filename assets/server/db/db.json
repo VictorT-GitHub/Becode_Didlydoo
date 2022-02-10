@@ -61,6 +61,90 @@
             "available": true
           }
         ]
+      },
+      {
+        "name": "john cena",
+        "dates": [
+          {
+            "date": "2022-03-17",
+            "available": false
+          },
+          {
+            "date": "2022-03-18",
+            "available": false
+          },
+          {
+            "date": "2022-03-21",
+            "available": false
+          },
+          {
+            "date": "2022-03-22",
+            "available": false
+          }
+        ]
+      },
+      {
+        "name": "xxxx",
+        "dates": [
+          {
+            "date": "2022-03-17",
+            "available": false
+          },
+          {
+            "date": "2022-03-18",
+            "available": true
+          },
+          {
+            "date": "2022-03-21",
+            "available": true
+          },
+          {
+            "date": "2022-03-22",
+            "available": false
+          }
+        ]
+      },
+      {
+        "name": "vivi",
+        "dates": [
+          {
+            "date": "2022-03-17",
+            "available": true
+          },
+          {
+            "date": "2022-03-18",
+            "available": false
+          },
+          {
+            "date": "2022-03-21",
+            "available": true
+          },
+          {
+            "date": "2022-03-22",
+            "available": false
+          }
+        ]
+      },
+      {
+        "name": "my-super-pseudo",
+        "dates": [
+          {
+            "date": "2022-03-17",
+            "available": true
+          },
+          {
+            "date": "2022-03-18",
+            "available": true
+          },
+          {
+            "date": "2022-03-21",
+            "available": false
+          },
+          {
+            "date": "2022-03-22",
+            "available": true
+          }
+        ]
       }
     ],
     "created_at": "2021-11-15T00:00",

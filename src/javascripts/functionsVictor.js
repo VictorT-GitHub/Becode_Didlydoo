@@ -10,13 +10,13 @@ async function postAttend(eventID, inputsUserSerie, inputName) {
   let resArray = [];
   let i = 0;
 
-  await fetch(`http://localhost:3000/api/events/${eventID}`)
+  await fetch(`http://localhost:9000/api/events/${eventID}`)
     .then((res) => res.json())
     .then((data) =>
       data.dates.forEach((elem) => {
         const newAttend = {
           date: elem.date,
-          available: false, // USER INPUT BOOLEAN(true/false)
+          available: false, // USER INPUT BOOLEAN
         };
 
         if (inputsUserSerie[i].classList.contains("yes")) {
@@ -32,7 +32,7 @@ async function postAttend(eventID, inputsUserSerie, inputName) {
 
   console.log(resArray);
 
-  fetch(`http://localhost:3000/api/events/${eventID}/attend`, {
+  fetch(`http://localhost:9000/api/events/${eventID}/attend`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -50,7 +50,7 @@ function postAdd_Dates(eventID) {
   newEventDates.forEach((date) => resArray.push(date.value));
   console.log(resArray);
 
-  fetch(`http://localhost:3000/api/events/${eventID}/add_dates`, {
+  fetch(`http://localhost:9000/api/events/${eventID}/add_dates`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -69,7 +69,7 @@ function postAdd_Dates(eventID) {
 function displayAllEvents() {
   document.querySelector("#allEventsContainer").innerHTML = "";
 
-  fetch("http://localhost:3000/api/events")
+  fetch("http://localhost:9000/api/events")
     .then((res) => res.json())
     .then((data) => {
       let availabilitiesGridNumIndex = 0;
@@ -196,7 +196,7 @@ function createEventDOM(event, availabilitiesGridNumIndex) {
       newEventAuthor.value &&
       newEventDescription.value
     ) {
-      fetch(`http://localhost:3000/api/events/${event.id}`, {
+      fetch(`http://localhost:9000/api/events/${event.id}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -224,7 +224,7 @@ function createEventDOM(event, availabilitiesGridNumIndex) {
   deleteEventBtn.classList.add("deleteEventBtn");
   deleteEventBtn.textContent = "Delete";
   deleteEventBtn.addEventListener("click", () => {
-    fetch(`http://localhost:3000/api/events/${event.id}`, {
+    fetch(`http://localhost:9000/api/events/${event.id}`, {
       method: "DELETE",
     }).then(() => displayAllEvents());
   });
@@ -301,7 +301,7 @@ document.querySelector("#newEventSubmit").addEventListener("click", (e) => {
 
     console.log(resArray);
 
-    fetch("http://localhost:3000/api/events", {
+    fetch("http://localhost:9000/api/events", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -319,7 +319,7 @@ document.querySelector("#newEventSubmit").addEventListener("click", (e) => {
   }
 });
 
-// add dates BTN (POST new event) (=== "+" btn)
+// add dates BTN (=== "+" btn)
 document.querySelector("#addDatesBtn").addEventListener("click", (e) => {
   e.preventDefault();
 
