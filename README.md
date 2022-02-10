@@ -8,8 +8,8 @@ Our coach at Becode provided us the backend part
 
 ## Screenshots
 
-![didlydoo-screenshot1](screenshots_readme/didlydoo-screenshot1.png)
+![didlydoo-screenshot1](./screenshots_readme/didlydoo-screenshot1.png)
 
-![didlydoo-screenshot2](screenshots_readme/didlydoo-screenshots2.png)
+![didlydoo-screenshot2](./screenshots_readme/didlydoo-screenshots2.png)
 
-![didlydoo-screenshot3](screenshots_readme/didlydoo-screenshots3.png)
+![didlydoo-screenshot3](./screenshots_readme/didlydoo-screenshots3.png)
